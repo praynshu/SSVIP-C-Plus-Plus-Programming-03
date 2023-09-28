@@ -1,47 +1,21 @@
 # SSVIP-C-Plus-Plus-Programming-03
 #FLOW CHART FOR THE CODE FOR Student Record Management
 Start
-|
-|--- Display Menu
-|   |
-|   |--- 1. Add Student Record
-|   |   |
-|   |   |--- Input Student ID, Name, and GPA
-|   |   |
-|   |   |--- Create a new Student object
-|   |   |
-|   |   |--- Add Student to the records vector
-|   |   |
-|   |   |--- Display "Student added successfully!"
-|   |
-|   |--- 2. View All Student Records
-|   |   |
-|   |   |--- Check if records vector is empty
-|   |   |
-|   |   |--- If empty, display "No student records found."
-|   |   |
-|   |   |--- If not empty, display all student records
-|   |
-|   |--- 3. Search for a Student Record
-|   |   |
-|   |   |--- Input Student ID to search
-|   |   |
-|   |   |--- Iterate through records vector
-|   |   |
-|   |   |--- If student found, display student information
-|   |   |
-|   |   |--- If student not found, display "Student not found."
-|   |
-|   |--- 4. Exit
-|   |   |
-|   |   |--- Display "Exiting the program."
-|   |   |
-|   |   |--- End
-|   
-|--- Invalid Choice
-|   |
-|   |--- Display "Invalid choice. Please try again."
-|
-|--- Repeat Menu
-|
-End
+Declare necessary header inclusions.
+Define the Student class (private data members and public methods).
+Implement file I/O functions (writeToFile and readFromFile).
+Implement student data management functions (e.g., addStudent, viewStudents, updateStudent, deleteStudent).
+Start the main function.
+Declare variables, including studentRecords and filename.
+Load data from a file using readFromFile.
+Enter an infinite loop for the menu-driven interface.
+Display the menu options (1. Add, 2. View, 3. Update, 4. Delete, 5. Save and Exit).
+Prompt the user for their choice.
+Based on the user's choice:
+If 1, call addStudent.
+If 2, call viewStudents.
+If 3, call updateStudent.
+If 4, call deleteStudent.
+If 5, call writeToFile to save data and exit.
+If the choice is invalid, display an error message.
+End the program.
